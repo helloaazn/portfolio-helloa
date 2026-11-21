@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <!-- Informações básicas da página -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Meu caminho na tecnologia: Cibersegurança ou Inteligência Artificial e Machine Learning, e o plano de estudos até o doutorado.">
+  <meta name="theme-color" content="#15122e">
+  <title>Meu futuro acadêmico | Helloá Samille</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>">
+
+  <script>document.documentElement.classList.add("js");</script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- CSS extra só desta página -->
+  <link rel="stylesheet" href="css/futuro.css">
+</head>
+
+<body>
+<a class="pular-link" href="#conteudo">Pular para o conteúdo</a>
+
+<!-- MENU (mesmo da página inicial, mas os links apontam para index.html) -->
+<header>
+  <nav class="navbar navbar-expand-lg fixed-top navbar-helloa" data-bs-theme="dark" aria-label="Navegação principal">
+    <a class="navbar-brand marca" href="index.html">Helloá <b>Samille</b></a>
+
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Abrir menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="menu">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="index.html">← Portfólio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#trajetoria">Vida acadêmica</a></li>
+        <li class="nav-item"><a class="nav-link" href="#caminhos">Dois caminhos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#comparativo">Comparativo</a></li>
+        <li class="nav-item"><a class="nav-link" href="#plano">Plano de estudos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#agora">Aprendendo agora</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+
+<main id="conteudo">
+
+  <!-- CABEÇALHO DA PÁGINA com um "terminal" de enfeite -->
+  <section class="futuro-hero">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <span class="eyebrow">MEU FUTURO ACADÊMICO</span>
+          <h1>Do 2º semestre ao <span class="destaque">doutorado</span>.</h1>
+          <p>
+            Eu ainda estou no começo da graduação, mas já sei pra onde quero ir. Aqui eu conto
+            sobre as duas áreas que mais me chamam atenção e como pretendo chegar lá.
+          </p>
+          <a class="btn btn-sol" href="#caminhos">Ver as duas áreas ↓</a>
+        </div>
+
+        <div class="col-lg-6">
+          <!-- Terminal só de enfeite, feito com HTML e CSS -->
+          <div class="terminal" aria-hidden="true">
+            <div class="terminal-barra"><span></span><span></span><span></span></div>
+            <div class="terminal-corpo">
+              <div><span class="prompt">$</span> whoami</div>
+              <div class="saida">helloa-samille</div>
+              <div><span class="prompt">$</span> cat objetivos.txt</div>
+              <div class="saida">graduação → especialização → pós → doutorado</div>
+              <div><span class="prompt">$</span> echo $ESPECIALIZACAO</div>
+              <div class="saida">cibersegurança || ia_e_machine_learning</div>
+              <div class="coment"># ainda decidindo, as duas me encantam</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- TRAJETÓRIA (linha do tempo feita com lista + badges do Bootstrap) -->
+  <section id="trajetoria" class="secao secao-lavanda">
+    <div class="container">
+      <div class="titulo-secao reveal">
+        <span class="tag">MEUS OBJETIVOS</span>
+        <h2>Minha vida acadêmica</h2>
+        <p>Cada etapa é um passo a mais em direção ao que eu sonho ser.</p>
+      </div>
+
+      <div class="row align-items-center g-5">
+
+        <div class="col-lg-5 order-lg-2">
+          <figure class="img-slot ratio ratio-4x3 reveal">
+            <img src="img/estudando.jpg" alt="Estudando">
+            <figcaption class="slot-aviso">
+              <code>img/estudando.jpg</code>
+            </figcaption>
+          </figure>
+
+          <figure class="img-slot ratio ratio-4x3 reveal mt-3">
+            <img src="img/faculdade.jpg" alt="Faculdade">
+            <figcaption class="slot-aviso">
+              <code>img/faculdade.jpg</code>
+            </figcaption>
+          </figure>
+        </div>
+
+        <div class="col-lg-7 order-lg-1">
+          <ol class="linha-tempo">
+            <li class="etapa etapa-atual reveal">
+              <span class="bolinha"></span>
+              <div class="etapa-card">
+                <span class="badge text-bg-warning">Em andamento</span>
+                <h3>Graduação em Ciência da Computação</h3>
+                <p>Estou no 2º semestre, aprendendo as bases e descobrindo do que mais eu gosto na área.</p>
+              </div>
+            </li>
+            <li class="etapa reveal">
+              <span class="bolinha"></span>
+              <div class="etapa-card">
+                <span class="badge text-bg-primary">Próximo passo</span>
+                <h3>Especialização</h3>
+                <p>Cibersegurança ou Inteligência Artificial e Machine Learning. Ainda estou decidindo, as duas me encantam.</p>
+              </div>
+            </li>
+            <li class="etapa reveal">
+              <span class="bolinha"></span>
+              <div class="etapa-card">
+                <span class="badge text-bg-secondary">Sonho</span>
+                <h3>Pós-graduação</h3>
+                <p>Continuar estudando e me aprofundando, porque aprender nunca termina.</p>
+              </div>
+            </li>
+            <li class="etapa reveal">
+              <span class="bolinha"></span>
+              <div class="etapa-card">
+                <span class="badge text-bg-secondary">Grande sonho</span>
+                <h3>Doutorado</h3>
+                <p>Seguir a trajetória acadêmica até o fim, sempre com muita vontade de aprender.</p>
+              </div>
+            </li>
+          </ol>
+          <a class="btn btn-sol mt-2" href="#caminhos">Conhecer as duas áreas →</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  
+  <!-- OS DOIS CAMINHOS -->
+  <section id="caminhos" class="secao">
+    <div class="container">
+      <div class="titulo-secao reveal">
+        <span class="tag">ESCOLHAS</span>
+        <h2>Dois caminhos, uma curiosidade</h2>
+        <p>Cada uma dessas áreas resolve um tipo de problema diferente.</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-lg-6">
+          <article class="card card-caminho ciber reveal">
+            <div class="icone">🔐</div>
+            <h3>Cibersegurança</h3>
+            <p>
+              É a área que protege sistemas, redes e dados contra ataques e acessos indevidos.
+              Hoje quase tudo está conectado, então proteger as informações das pessoas é cada vez mais importante.
+            </p>
+            <div>
+              <span class="badge rounded-pill text-bg-light">Segurança de redes</span>
+              <span class="badge rounded-pill text-bg-light">Criptografia</span>
+              <span class="badge rounded-pill text-bg-light">Análise de vulnerabilidades</span>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-lg-6">
+          <article class="card card-caminho ia reveal">
+            <div class="icone">🤖</div>
+            <h3>IA e Machine Learning</h3>
+            <p>
+              É a área que ensina computadores a aprenderem com dados, para reconhecer padrões e tomar decisões.
+              Está por trás de recomendações, tradutores, assistentes virtuais e muito mais.
+            </p>
+            <div>
+              <span class="badge rounded-pill text-bg-light">Aprendizado de máquina</span>
+              <span class="badge rounded-pill text-bg-light">Visão computacional</span>
+              <span class="badge rounded-pill text-bg-light">Redes neurais</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- TABELA COMPARATIVA (Bootstrap: table, table-responsive) -->
+  <section id="comparativo" class="secao secao-lavanda">
+    <div class="container">
+      <div class="titulo-secao reveal">
+        <span class="tag">LADO A LADO</span>
+        <h2>Comparando as duas áreas</h2>
+        <p>Um resumo simples pra eu mesma organizar as ideias.</p>
+      </div>
+
+      <!-- table-responsive faz a tabela ter rolagem lateral no celular -->
+      <div class="table-responsive tabela-comparativa reveal">
+        <table class="table table-borderless mb-0 align-middle">
+          <caption class="visually-hidden">Comparação entre Cibersegurança e Inteligência Artificial</caption>
+          <thead>
+            <tr>
+              <th scope="col"></th>
+              <th scope="col">🔐 Cibersegurança</th>
+              <th scope="col">🤖 IA e Machine Learning</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">Pergunta central</th>
+              <td>Como proteger sistemas, redes e dados contra ataques?</td>
+              <td>Como fazer computadores aprenderem com dados?</td>
+            </tr>
+            <tr class="table-light">
+              <th scope="row">O que se estuda</th>
+              <td>Redes, sistemas operacionais, criptografia e boas práticas de segurança.</td>
+              <td>Matemática, estatística, programação e algoritmos de aprendizado.</td>
+            </tr>
+            <tr>
+              <th scope="row">Exemplos de áreas</th>
+              <td>Segurança de redes, resposta a incidentes, análise de vulnerabilidades.</td>
+              <td>Visão computacional, processamento de linguagem natural, redes neurais.</td>
+            </tr>
+            <tr class="table-light">
+              <th scope="row">Status</th>
+              <td><span class="badge text-bg-warning">Quero conhecer mais</span></td>
+              <td><span class="badge text-bg-warning">Quero conhecer mais</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- PLANO DE ESTUDOS (Bootstrap: accordion) -->
+  <section id="plano" class="secao plano">
+    <div class="container" style="max-width: 820px;">
+      <div class="titulo-secao reveal">
+        <span class="tag">PASSO A PASSO</span>
+        <h2>Meu plano de estudos</h2>
+        <p>Clique em cada etapa pra ver o que eu pretendo fazer.</p>
+      </div>
+
+      <div class="accordion reveal" id="acordeao-plano">
+
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#etapa1" aria-expanded="true" aria-controls="etapa1">
+              1. Agora: graduação em Ciência da Computação
+            </button>
+          </h3>
+          <div id="etapa1" class="accordion-collapse collapse show" data-bs-parent="#acordeao-plano">
+            <div class="accordion-body">
+              Estou no 2º semestre, construindo as bases: lógica, programação e como os computadores funcionam.
+              Também estou aprendendo a criar sites, como este aqui.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#etapa2" aria-expanded="false" aria-controls="etapa2">
+              2. Depois: especialização
+            </button>
+          </h3>
+          <div id="etapa2" class="accordion-collapse collapse" data-bs-parent="#acordeao-plano">
+            <div class="accordion-body">
+              Quando eu concluir a graduação, quero me especializar em Cibersegurança ou em Inteligência Artificial
+              e Machine Learning. Até lá, vou conhecendo as duas áreas e vendo com qual eu mais me identifico.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#etapa3" aria-expanded="false" aria-controls="etapa3">
+              3. Pós-graduação
+            </button>
+          </h3>
+          <div id="etapa3" class="accordion-collapse collapse" data-bs-parent="#acordeao-plano">
+            <div class="accordion-body">
+              Meu desejo de aprender vai além da graduação. A pós é a hora de me aprofundar no que eu escolher.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h3 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#etapa4" aria-expanded="false" aria-controls="etapa4">
+              4. O grande sonho: doutorado
+            </button>
+          </h3>
+          <div id="etapa4" class="accordion-collapse collapse" data-bs-parent="#acordeao-plano">
+            <div class="accordion-body">
+              Seguir a vida acadêmica até o doutorado, sempre buscando conhecimento, crescimento pessoal e
+              desenvolvimento profissional.
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- O QUE ESTOU APRENDENDO AGORA (nesta matéria) -->
+  <section id="agora" class="secao secao-lavanda">
+    <div class="container">
+      <div class="titulo-secao reveal">
+        <span class="tag">NA PRÁTICA</span>
+        <h2>O que eu usei pra fazer este site</h2>
+        <p>Na matéria de Desenvolvimento Front-End para Web eu estou aprendendo estas tecnologias.</p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-12 col-sm-6 col-lg-3">
+          <article class="card-tech reveal">
+            <code>&lt;HTML&gt;</code>
+            <h3>HTML</h3>
+            <p>A estrutura da página: títulos, textos, imagens, formulário e menu.</p>
+          </article>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <article class="card-tech reveal">
+            <code>{ CSS }</code>
+            <h3>CSS</h3>
+            <p>As cores, as fontes, as animações e o jeito que tudo se encaixa na tela.</p>
+          </article>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <article class="card-tech reveal">
+            <code>JS()</code>
+            <h3>JavaScript</h3>
+            <p>O efeito de digitação, o placar de vôlei, os números animados e a validação do formulário.</p>
+          </article>
+        </div>
+        <div class="col-12 col-sm-6 col-lg-3">
+          <article class="card-tech reveal">
+            <code>.container</code>
+            <h3>Bootstrap</h3>
+            <p>Menu, grade responsiva, cards, abas, carrossel, accordion, tabela, toast e tooltips.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Volta para a página inicial -->
+  <section class="secao-voltar">
+    <a class="btn btn-sol" href="index.html">← Voltar ao meu portfólio</a>
+  </section>
+
+</main>
+
+
+<footer class="rodape">
+  <p class="mb-1">© <span id="ano">2026</span> <strong>Helloá Samille</strong> • Feito com carinho, HTML, CSS e JavaScript</p>
+  <p class="credito">Projeto final da disciplina de Desenvolvimento Front-End para Web.</p>
+</footer>
+
+<button class="botao-topo" aria-label="Voltar ao topo">↑</button>
+
+<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <!-- Informações básicas da página  -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfólio de Helloá Samille, 19 anos, estudante de Ciência da Computação. Sonhos, família, fé, música e esportes.">
+  <meta name="theme-color" content="#15122e">
+  <title>Helloá Samille | Portfólio</title>
+
+  <!-- Ícone da aba do navegador (um emoji, sem precisar de arquivo) -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>">
+
+  <!-- Avisa o CSS que o JavaScript está ativo (usado nas animações e nas fotos) -->
+  <script>document.documentElement.classList.add("js");</script>
+
+  <!-- Fontes do Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap (copia local, funciona sem internet) e depois o meu CSS -->
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<a class="pular-link" href="#conteudo">Pular para o conteúdo</a>
+
+<!-- MENU (Bootstrap: navbar + collapse + fixed-top) No celular ele vira o botão "hambúrguer". -->
+
+<header>
+  <nav class="navbar navbar-expand-lg fixed-top navbar-helloa" data-bs-theme="dark" aria-label="Navegação principal">
+    <a class="navbar-brand marca" href="#inicio">Helloá <b>Samille</b></a>
+
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Abrir menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="menu">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="#sobre">Sobre mim</a></li>
+        <li class="nav-item"><a class="nav-link" href="#musica">Música</a></li>
+        <li class="nav-item"><a class="nav-link" href="#esportes">Esportes</a></li>
+        <li class="nav-item"><a class="nav-link" href="#familia">Família</a></li>
+        <li class="nav-item"><a class="nav-link" href="#amigos">Amigos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#fe">Fé</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+        <!-- Esse link leva para a segunda página do site -->
+        <li class="nav-item"><a class="nav-link nav-futuro" href="futuro.html">🎓 Meu futuro acadêmico</a></li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+
+<main id="conteudo">
+
+  <!--  HERO (início) Texto de boas-vindas à esquerda e a minha foto principal à direita. -->
+  
+  <section id="inicio" class="hero">
+    <div class="container">
+      <div class="row align-items-center g-5">
+
+        <div class="col-lg-7">
+          <span class="eyebrow">PORTFÓLIO PESSOAL • 2026</span>
+          <h1>Oi, eu sou a <span class="destaque">Helloá</span>.</h1>
+
+          <!-- O texto que fica "digitando" é controlado pelo JavaScript (id="digitando") -->
+          <p class="linha-digitando">Eu sou <strong id="digitando"></strong><span class="cursor">|</span></p>
+
+          <p class="hero-desc">
+            Tenho 19 anos, estudo Ciência da Computação e sonho em me especializar em Cibersegurança
+            ou Inteligência Artificial. Este site é um pedacinho de quem eu sou. Fica à vontade!
+          </p>
+
+          <div class="d-flex flex-wrap gap-3">
+            <a class="btn btn-sol" href="#sobre">Conhecer minha história</a>
+            <a class="btn btn-contorno" href="#contato">Falar comigo</a>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <div class="hero-foto">
+
+            <!--FOTO 1 — FOTO PRINCIPAL -->
+            <figure class="img-slot ratio ratio-4x5">
+              <img src="img/helloaS.jpeg" alt="Foto de Helloá Samille">
+              <figcaption class="slot-aviso">
+                <code>img/helloaS.jpeg</code>
+              </figcaption>
+            </figure>
+
+            <!-- etiquetinhas que ficam flutuando em volta da foto (CSS) -->
+            <span class="etiqueta e1">💻 Ciência da Computação</span>
+            <span class="etiqueta e2">🎸 4 instrumentos</span>
+            <span class="etiqueta e3">🏐 Vôlei</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a class="seta-rolar" href="#sobre" aria-label="Rolar para baixo">↓</a>
+  </section>
+
+
+  <!-- SOBRE MIM -->
+  <section id="sobre" class="secao sobre">
+    <div class="container">
+      <div class="row align-items-center g-5 reveal">
+        <div class="col-lg-5 sobre-foto">
+          <figure class="img-slot ratio ratio-4x5">
+            <img src="img/hello.jpeg" alt="Helloá ">
+            <figcaption class="slot-aviso">              
+              <code>img/hello.jpeg</code>
+            </figcaption>
+          </figure>
+        </div>
+
+        <div class="col-lg-7">
+          <span class="tag">SOBRE MIM</span>
+          <h2>Prazer, Helloá!</h2>
+
+          <p>
+            Meu nome é Helloá Samille, tenho 19 anos e sou uma pessoa movida por sonhos, objetivos e
+            vontade de aprender. Hoje eu curso Ciência da Computação e um dos meus maiores sonhos é
+            concluir a graduação e depois me especializar em <strong>Cibersegurança</strong> ou em
+            <strong>Inteligência Artificial e Machine Learning</strong>.
+          </p>
+          <p>
+            Minha vontade de aprender vai muito além da graduação. Quero fazer pós-graduação e seguir
+            na vida acadêmica até o doutorado, sempre buscando conhecimento, crescimento pessoal e
+            desenvolvimento profissional.
+          </p>
+          <p>
+            Sou extremamente leal a quem eu amo e valorizo muito os laços que construo. Por isso a minha
+            família é o meu porto seguro, e tenho amigos que eu considero parte dela.
+          </p>
+
+          <!-- Os chips têm tooltip do Bootstrap (balãozinho ao passar o mouse) -->
+          <ul class="chips">
+            <li data-bs-toggle="tooltip" data-bs-title="Meus sonhos são grandes"> Determinada</li>
+            <li data-bs-toggle="tooltip" data-bs-title="Com quem eu amo, sempre"> Leal</li>
+            <li data-bs-toggle="tooltip" data-bs-title="Sempre querendo aprender mais"> Curiosa</li>
+            <li data-bs-toggle="tooltip" data-bs-title="Deus faz parte da minha caminhada"> Fé</li>
+            <li data-bs-toggle="tooltip" data-bs-title="Violão, baixo, guitarra e ukulele"> Musical</li>
+          </ul>
+
+          <!-- Faixa de números (os números sobem com JavaScript, veja data-count) -->
+          <div class="numeros row g-0">
+            <div class="col-4"><strong data-count="19">0</strong><span>anos</span></div>
+            <div class="col-4"><strong data-count="3">0</strong><span>sobrinhos amados</span></div>
+            <div class="col-4"><strong data-count="4">0</strong><span>instrumentos</span></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- O QUE ME MOVE (cards do Bootstrap) -->
+  <section id="pilares" class="secao secao-lavanda">
+    <div class="container">
+      <div class="titulo-secao reveal">
+        <span class="tag">O QUE ME MOVE</span>
+        <h2>Os pilares da minha vida</h2>
+        <p>Seis coisas que dizem muito sobre quem eu sou.</p>
+      </div>
+
+      <!-- Grade do Bootstrap: 1 coluna no celular, 2 no tablet, 3 no computador -->
+      <div class="row g-4">
+        <div class="col-12 col-md-6 col-lg-4">
+          <article class="card card-pilar reveal">
+            <div class="icone">💻</div>
+            <h3>Estudos</h3>
+            <p>Cursar Ciência da Computação é o primeiro passo de uma jornada que eu quero levar até o doutorado.</p>
+          </article>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <article class="card card-pilar reveal">
+            <div class="icone">👨‍👩‍👧</div>
+            <h3>Família</h3>
+            <p>Meu maior porto seguro, minha força e uma das principais razões pelas quais eu busco realizar meus sonhos.</p>
+          </article>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <article class="card card-pilar reveal">
+            <div class="icone">🙏</div>
+            <h3>Fé</h3>
+            <p>Acredito que Deus faz parte da minha caminhada. A fé me fortalece, me orienta e me dá esperança.</p>
+          </article>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <article class="card card-pilar reveal">
+            <div class="icone">🎸</div>
+            <h3>Música</h3>
+            <p>Toco violão, baixo, guitarra e ukulele. A música é uma das minhas maiores paixões.</p>
+          </article>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <article class="card card-pilar reveal">
+            <div class="icone">🏐</div>
+            <h3>Esportes</h3>
+            <p>O vôlei é o meu favorito, mas gosto de experimentar de tudo um pouco. O importante é participar.</p>
+          </article>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <article class="card card-pilar reveal">
+            <div class="icone">🤝</div>
+            <h3>Amizades</h3>
+            <p>Tenho amigos que considero família. São pessoas que deixam a minha caminhada mais leve.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- BANNER DE FRASE -->
+  <section class="banner-frase" aria-label="Frase">
+    <div class="container">
+      <p>Posso não ser boa em tudo, mas nunca deixei de tentar.</p>
+      <a class="btn btn-sol mt-4" href="futuro.html">Conheça meus planos acadêmicos →</a>
+    </div>
+  </section>
+
+
+  <!-- MÚSICA Abas do Bootstrap (nav-pills + tab-content): uma aba por instrumento. -->
+  <section id="musica" class="secao">
+    <div class="container">
+      <div class="titulo-secao reveal">
+        <span class="tag">TRILHA SONORA</span>
+        <h2>Minha paixão pela música</h2>
+        <p>Eu toco quatro instrumentos. Clique nas abas pra conhecer cada um.</p>
+      </div>
+
+      <!-- Botões das abas -->
+      <ul class="nav nav-pills justify-content-center abas-instrumentos" id="abas-instrumentos" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="aba-violao" data-bs-toggle="pill" data-bs-target="#painel-violao" type="button" role="tab" aria-controls="painel-violao" aria-selected="true">🎸 Violão</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="aba-baixo" data-bs-toggle="pill" data-bs-target="#painel-baixo" type="button" role="tab" aria-controls="painel-baixo" aria-selected="false">🔊 Baixo</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="aba-guitarra" data-bs-toggle="pill" data-bs-target="#painel-guitarra" type="button" role="tab" aria-controls="painel-guitarra" aria-selected="false">🤘 Guitarra</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="aba-ukulele" data-bs-toggle="pill" data-bs-target="#painel-ukulele" type="button" role="tab" aria-controls="painel-ukulele" aria-selected="false">🌴 Ukulele</button>
+        </li>
+      </ul>
+
+      <!-- Conteúdo de cada aba -->
+      <div class="tab-content mx-auto" style="max-width: 900px;">
+
+        <!-- ABA 1: VIOLÃO -->
+        <div class="tab-pane fade show active" id="painel-violao" role="tabpanel" aria-labelledby="aba-violao" tabindex="0">
+          <div class="painel-instrumento">
+            <div class="row align-items-center g-4">
+              <div class="col-md-6">
+                <figure class="img-slot ratio ratio-4x3">
+                  <img src="img/violao.jpg" alt="Violão">
+                  <figcaption class="slot-aviso">
+                    <code>img/violao.jpg</code>
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="col-md-6">
+                <h3>Violão</h3>
+                <p>O violão é aquele instrumento que combina com tudo: de uma música tranquila sozinha no quarto até uma roda de amigos.</p>
+                <span class="badge rounded-pill text-bg-dark">Eu toco!</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ABA 2: BAIXO -->
+        <div class="tab-pane fade" id="painel-baixo" role="tabpanel" aria-labelledby="aba-baixo" tabindex="0">
+          <div class="painel-instrumento">
+            <div class="row align-items-center g-4">
+              <div class="col-md-6">
+               
+                <figure class="img-slot ratio ratio-4x3">
+                  <img src="img/baixo.jpg" alt="Baixo">
+                  <figcaption class="slot-aviso">
+                    <code>img/baixo.jpg</code>
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="col-md-6">
+                <h3>Baixo</h3>
+                <p>O baixo é a base da música. Quase ninguém repara quando ele está tocando bem, mas todo mundo sente quando ele falta.</p>
+                <span class="badge rounded-pill text-bg-dark">Eu toco!</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ABA 3: GUITARRA -->
+        <div class="tab-pane fade" id="painel-guitarra" role="tabpanel" aria-labelledby="aba-guitarra" tabindex="0">
+          <div class="painel-instrumento">
+            <div class="row align-items-center g-4">
+              <div class="col-md-6">
+             
+                <figure class="img-slot ratio ratio-4x3">
+                  <img src="img/guitarra.jpg" alt="Guitarra">
+                  <figcaption class="slot-aviso">
+                    <code>img/guitarra.jpg</code>
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="col-md-6">
+                <h3>Guitarra</h3>
+                <p>Guitarra é sinônimo de timbre: dá pra ir de um som limpo e suave até algo bem pesado.</p>
+                <span class="badge rounded-pill text-bg-dark">Eu toco!</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ABA 4: UKULELE -->
+        <div class="tab-pane fade" id="painel-ukulele" role="tabpanel" aria-labelledby="aba-ukulele" tabindex="0">
+          <div class="painel-instrumento">
+            <div class="row align-items-center g-4">
+              <div class="col-md-6">
+
+                <figure class="img-slot ratio ratio-4x3">
+                  <img src="img/ukulele.jpg" alt="Ukulele">
+                  <figcaption class="slot-aviso">
+                    <code>img/ukulele.jpg</code>
+                  </figcaption>
+                </figure>
+              </div>
+              <div class="col-md-6">
+                <h3>Ukulele</h3>
+                <p>O ukulele é pequeno, leve e tem um som que já anima qualquer ambiente. Dá pra levar pra qualquer lugar.</p>
+                <span class="badge rounded-pill text-bg-dark">Eu toco!</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+  </section>
+
+  <!-- FRANK OCEAN (seção só dele, com 3 espaços de foto) -->
+  <section id="frank" class="secao secao-escura">
+    <div class="container">
+      <div class="titulo-secao reveal">
+        <span class="tag">MEU CANTOR FAVORITO</span>
+        <h2>Frank Ocean</h2>
+        <p>A música dele faz parte das minhas inspirações e das minhas preferências musicais.</p>
+      </div>
+
+      <div class="row g-4 align-items-center">
+        <div class="col-md-5 reveal">
+
+          <figure class="img-slot ratio ratio-4x5">
+            <img src="img/FrankOcean.jpeg" alt="Frank Ocean">
+            <figcaption class="slot-aviso">
+              <code>img/FrankOcean.jpeg</code>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="col-md-7">
+          <div class="row g-4">
+            <div class="col-sm-6 reveal">
+              <figure class="img-slot ratio ratio-1x1">
+                <img src="img/Blonde.jpeg" alt="Álbum favorito do Frank Ocean">
+                <figcaption class="slot-aviso">
+                  <code>img/Blonde.jpeg</code>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="col-sm-6 reveal">
+              <figure class="img-slot ratio ratio-1x1">
+                <img src="img/WhiteFerrari.jpeg" alt="Música">
+                <figcaption class="slot-aviso">
+                  <code>img/WhiteFerrari.jpeg</code>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="col-12 reveal">
+              <p class="mb-3" style="color: #d8d2f3;">
+                Tenho uma conexão especial com a música, e o Frank Ocean é o artista que mais representa o que eu gosto de ouvir.
+              </p>
+              <!-- Link de busca no Spotify -->
+              <a class="btn btn-sol" href="https://open.spotify.com/search/Frank%20Ocean" target="_blank" rel="noopener">Ouvir no Spotify ↗</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- ESPORTES (+ minijogo de placar feito em JavaScript) -->
+  <section id="esportes" class="secao secao-lavanda">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-5 reveal">
+          <figure class="img-slot ratio ratio-4x3">
+            <img src="img/volei.jpeg" alt="Vôlei">
+            <figcaption class="slot-aviso">
+              <code>img/volei.jpeg</code>
+            </figcaption>
+          </figure>
+        </div>
+
+        <div class="col-lg-7 reveal">
+          <span class="tag">EM MOVIMENTO</span>
+          <h2>Apaixonada por esportes</h2>
+          <p>
+            Meu esporte favorito é o <strong>vôlei</strong>, mas eu gosto de praticar um pouco de tudo.
+            Posso não ser boa em todas as modalidades, mas isso nunca foi um impedimento pra experimentar,
+            aprender e me divertir.
+          </p>
+
+          <!-- Três mini cards (grade do Bootstrap) -->
+          <div class="row g-3 mt-1">
+            <div class="col-12 col-sm-4">
+              <div class="valor-esporte"><b>Participar</b><span>O mais importante é entrar em quadra.</span></div>
+            </div>
+            <div class="col-12 col-sm-4">
+              <div class="valor-esporte"><b>Aproveitar</b><span>Curtir o momento, ganhando ou perdendo.</span></div>
+            </div>
+            <div class="col-12 col-sm-4">
+              <div class="valor-esporte"><b>Descobrir</b><span>Experimentar novas possibilidades.</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mais fotos de esporte -->
+      <div class="row g-3 mt-4">
+        <div class="col-md-6 reveal">
+          <figure class="img-slot ratio ratio-16x9">
+            <img src="img/fut.jpeg" alt="Outro esporte">
+            <figcaption class="slot-aviso">
+              <code>img/fut.jpeg</code>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="col-md-6 reveal">
+
+          <figure class="img-slot ratio ratio-16x9">
+            <img src="img/futebol.jpeg" alt="Esporte Manu">
+            <figcaption class="slot-aviso">
+              <code>img/futebol.jpeg</code>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <!-- Minijogo: placar de vôlei (a lógica está no js/script.js, seção 7) -->
+      <div class="row justify-content-center mt-5">
+        <div class="col-lg-8 reveal">
+          <div class="placar text-center" id="placar">
+            <h3>🏐 Placar de vôlei</h3>
+            <p>Um minijogo que eu programei em JavaScript. Marque os pontos de cada time!</p>
+
+            <div class="row align-items-center">
+              <div class="col-5">
+                <h4 class="h5">Time A</h4>
+                <div class="pontos" id="pontosA">0</div>
+                <button class="btn btn-sol" type="button" data-time="A">+1 ponto</button>
+              </div>
+              <div class="col-2 versus">x</div>
+              <div class="col-5">
+                <h4 class="h5">Time B</h4>
+                <div class="pontos" id="pontosB">0</div>
+                <button class="btn btn-sol" type="button" data-time="B">+1 ponto</button>
+              </div>
+            </div>
+
+            <p class="placar-msg mt-4 mb-3" id="placar-msg" role="status">Primeiro a chegar em 25 com 2 pontos de vantagem ganha o set.</p>
+            <button class="btn btn-outline-light btn-sm rounded-pill px-4" type="button" id="placar-reset">Zerar placar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- FAMÍLIA Cards dos sobrinhos + carrossel do Bootstrap com álbum de fotos. -->
+  <section id="familia" class="secao">
+    <div class="container">
+      <div class="titulo-secao reveal">
+        <span class="tag">MINHAS MAIORES PAIXÕES</span>
+        <h2>Meus sobrinhos e minha família</h2>
+        <p>Eles ocupam um lugar muito especial no meu coração.</p>
+      </div>
+
+      <div class="row g-4 justify-content-center">
+
+        <!-- LIAM -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <article class="card card-sobrinho reveal">
+            <figure class="img-slot ratio ratio-1x1">
+              <img src="img/Liam.jpeg" alt="Helloá com o Liam">
+              <figcaption class="slot-aviso">
+                <code>img/Liam.jpeg</code>
+              </figcaption>
+            </figure>
+            <div class="card-body">
+              <h3>Liam <span class="badge text-bg-warning fs-6 align-middle">7 anos</span></h3>
+              <p class="mb-0">O mais velho dos três.</p>
+            </div>
+          </article>
+        </div>
+
+        <!-- ÍTAN -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <article class="card card-sobrinho reveal">
+            <figure class="img-slot ratio ratio-1x1">
+              <img src="img/Itan.jpeg" alt="Helloá com o Ítan">
+              <figcaption class="slot-aviso">
+                <code>img/Itan.jpeg</code>
+              </figcaption>
+            </figure>
+            <div class="card-body">
+              <h3>Ítan <span class="badge text-bg-warning fs-6 align-middle">6 anos</span></h3>
+              <p class="mb-0">O do meio.</p>
+            </div>
+          </article>
+        </div>
+
+        <!-- LANNA -->
+        <div class="col-12 col-sm-6 col-lg-4">
+          <article class="card card-sobrinho reveal">
+            <figure class="img-slot ratio ratio-1x1">
+              <img src="img/Lanna.jpeg" alt="Helloá com a Lanna">
+              <figcaption class="slot-aviso">
+                <code>img/Lanna.jpeg</code>
+              </figcaption>
+            </figure>
+            <div class="card-body">
+              <h3>Lanna <span class="badge text-bg-warning fs-6 align-middle">2 anos</span></h3>
+              <p class="mb-0">A caçulinha.</p>
+            </div>
+          </article>
+        </div>
+
+      </div>
+
+      <!-- ÁLBUM: carrossel do Bootstrap (data-bs-ride="false" = não passa sozinho) -->
+      <div class="album reveal">
+        <h3 class="text-center h4 mb-4" style="color: var(--noite);">Álbum da família</h3>
+
+        <div id="carrossel-album" class="carousel slide" data-bs-ride="false" aria-label="Álbum de fotos da família">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carrossel-album" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Foto 1"></button>
+            <button type="button" data-bs-target="#carrossel-album" data-bs-slide-to="1" aria-label="Foto 2"></button>
+            <button type="button" data-bs-target="#carrossel-album" data-bs-slide-to="2" aria-label="Foto 3"></button>
+          </div>
+
+          <div class="carousel-inner">
+
+            <div class="carousel-item active">
+              <figure class="img-slot ratio ratio-16x9">
+                <img src="img/Juntos.jpeg" alt="Helloá com os três sobrinhos">
+                <figcaption class="slot-aviso">
+                  <code>img/Juntos.jpeg</code>
+                </figcaption>
+              </figure>
+            </div>
+
+            <div class="carousel-item">
+              <figure class="img-slot ratio ratio-16x9">
+                <img src="img/ConfraFamilia.jpeg" alt="Família de Helloá reunida">
+                <figcaption class="slot-aviso">
+                  <code>img/ConfraFamilia.jpeg</code>
+                </figcaption>
+              </figure>
+            </div>
+
+            <div class="carousel-item">
+              <figure class="img-slot ratio ratio-16x9">
+                <img src="img/Familia.jpeg" alt="Helloá em um dia especial com a família">
+                <figcaption class="slot-aviso">
+                  <code>img/Familia.jpeg</code>
+                </figcaption>
+              </figure>
+            </div>
+
+          </div>
+
+          <button class="carousel-control-prev" type="button" data-bs-target="#carrossel-album" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Foto anterior</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carrossel-album" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Próxima foto</span>
+          </button>
+        </div>
+
+        <p class="legenda-album">Minha família: o meu lugar seguro.</p>
+      </div>
+    </div>
+  </section>
+
+
+    <!-- AMIGOS (seção própria, com 3 espaços de foto) -->
+  <section id="amigos" class="secao secao-lavanda">
+    <div class="container">
+      <div class="titulo-secao reveal">
+        <span class="tag">ELES SÃO FAMÍLIA</span>
+        <h2>Amigos que são família</h2>
+        <p>
+          Tenho amigos que eu considero parte da minha família: pessoas que tornam a minha caminhada
+          mais leve e que têm um lugar muito especial na minha vida.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <div class="col-12 col-md-4 reveal">
+          <figure class="img-slot ratio ratio-4x5">
+            <img src="img/Faculdade.jpeg" alt="Helloá com os amigos da faculdade">
+            <figcaption class="slot-aviso">
+              <code>img/Faculdade.jpeg</code>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="col-12 col-md-4 reveal">
+          <figure class="img-slot ratio ratio-4x5">
+            <img src="img/MafeManu.jpeg" alt="Helloá e suas melhores amigas">
+            <figcaption class="slot-aviso">
+              <code>img/MafeManu.jpeg</code>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="col-12 col-md-4 reveal">
+         <figure class="img-slot ratio ratio-4x5">
+            <img src="img/Maria.jpeg" alt="Helloá e Maria">
+            <figcaption class="slot-aviso">
+              <code>img/Maria.jpeg</code>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- FÉ -->
+  <section id="fe" class="secao secao-escura">
+    <div class="container">
+      <div class="painel-fe reveal">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-7">
+            <span class="tag">MINHA BASE</span>
+            <h2>Minha fé</h2>
+            <p>
+              Outro pilar essencial da minha vida é a fé. Eu acredito que Deus faz parte da minha caminhada
+              e que a fé me fortalece, me orienta e me dá esperança pra continuar seguindo em direção aos meus objetivos.
+            </p>
+            <blockquote>A fé me dá esperança pra continuar.</blockquote>
+          </div>
+          <div class="col-lg-5">
+            <figure class="img-slot ratio ratio-4x3">
+              <img src="img/fe.jpg" alt="Fé">
+              <figcaption class="slot-aviso">
+                <code>img/fe.jpg</code>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- CONTATO Formulário com validação do Bootstrap (form-floating + was-validated). -->
+  <section id="contato" class="contato">
+    <div class="container">
+      <div class="row align-items-center g-5">
+
+        <div class="col-lg-6 reveal">
+          <span class="tag" style="color: var(--ouro);">CONTATO</span>
+          <h2>Vamos conversar?</h2>
+          <p>
+            Quer trocar uma ideia sobre tecnologia, música, vôlei ou só dar um oi? Me manda uma mensagem!
+          </p>
+
+          <!-- Redes sociais -->
+          <div class="redes d-flex gap-3 mt-4">
+            <a href="https://www.instagram.com/helloaazn?gwpx=bmdmaTNuOGpoZHZ2&utm_source=qr" target="_blank" rel="noopener" aria-label="Instagram" data-bs-toggle="tooltip" data-bs-title="Instagram">📷</a>
+            <a href="https://www.linkedin.com/in/hello%C3%A1-samille-a55737351/" target="_blank" rel="noopener" aria-label="LinkedIn" data-bs-toggle="tooltip" data-bs-title="LinkedIn">💼</a>
+            <a href="https://github.com/helloaazn" target="_blank" rel="noopener" aria-label="GitHub" data-bs-toggle="tooltip" data-bs-title="GitHub">💻</a>
+          </div>
+        </div>
+
+        <div class="col-lg-6 reveal">
+          <form id="form-contato" class="form-contato needs-validation" novalidate>
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="nome" placeholder="Seu nome" required minlength="2">
+              <label for="nome">Nome</label>
+              <div class="invalid-feedback">Escreva seu nome (mínimo 2 letras).</div>
+            </div>
+
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control" id="email" placeholder="seu@email.com" required>
+              <label for="email">E-mail</label>
+              <div class="invalid-feedback">Digite um e-mail válido.</div>
+            </div>
+
+            <div class="form-floating mb-3">
+              <textarea class="form-control" id="mensagem" placeholder="Escreva sua mensagem" style="height: 140px;" required minlength="10"></textarea>
+              <label for="mensagem">Mensagem</label>
+              <div class="invalid-feedback">A mensagem precisa ter pelo menos 10 caracteres.</div>
+            </div>
+
+            <button class="btn btn-sol w-100" type="submit">Enviar mensagem →</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+
+<!-- RODAPÉ -->
+<footer class="rodape">
+  <p class="mb-1">© <span id="ano">2026</span> <strong>Helloá Samille</strong> • Feito com carinho, HTML, CSS e JavaScript</p>
+  <p class="credito">Projeto final da disciplina de Desenvolvimento Front-End para Web.</p>
+</footer>
+
+
+<!-- Toast do Bootstrap: aviso que aparece depois de enviar o formulário -->
+<div class="toast-container position-fixed bottom-0 end-0 p-3">
+  <div id="toast-sucesso" class="toast text-bg-success" role="status" aria-live="polite" aria-atomic="true">
+    <div class="d-flex">
+      <div class="toast-body">
+        Obrigada, <strong id="toast-nome"></strong>! Sua mensagem está pronta no seu app de e-mail.
+      </div>
+      <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Fechar"></button>
+    </div>
+  </div>
+</div>
+
+<!-- Botão de voltar ao topo (o JS mostra e esconde) -->
+<button class="botao-topo" aria-label="Voltar ao topo">↑</button>
+
+<!-- Scripts: primeiro o Bootstrap, depois o meu -->
+<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>

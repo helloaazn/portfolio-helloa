@@ -1,0 +1,166 @@
+/* CABEÇALHO DA PÁGINA */
+.futuro-hero {
+  padding: 130px 0 80px;
+  color: #fff;
+  background:
+    radial-gradient(circle at 85% 20%, rgba(124, 92, 255, 0.55), transparent 50%),
+    radial-gradient(circle at 5% 90%, rgba(255, 122, 89, 0.35), transparent 45%),
+    var(--noite);
+}
+.futuro-hero h1 {
+  font-size: clamp(2.6rem, 6vw, 4.6rem);
+  margin-bottom: 16px;
+}
+.futuro-hero p {
+  color: #dcd6f6;
+  max-width: 560px;
+}
+
+
+/* "TERMINAL" (enfeite de programadora) */
+.terminal {
+  background: #0d0b20;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.45);
+  font-family: var(--fonte-codigo);
+  font-size: 0.88rem;
+  overflow: hidden;
+}
+.terminal-barra {
+  background: #1c1840;
+  padding: 10px 14px;
+  display: flex;
+  gap: 7px;
+}
+.terminal-barra span {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #ff5f56;
+}
+.terminal-barra span:nth-child(2) { background: #ffbd2e; }
+.terminal-barra span:nth-child(3) { background: #27c93f; }
+
+.terminal-corpo {
+  padding: 18px 20px;
+  color: #cfc9ee;
+  line-height: 1.8;
+}
+.terminal-corpo .prompt  { color: var(--ouro); }
+.terminal-corpo .saida   { color: #fff; }
+.terminal-corpo .coment  { color: #8f86c4; }
+
+
+/* CARDS DOS DOIS CAMINHOS */
+.card-caminho {
+  border: 0;
+  border-radius: 24px;
+  padding: 34px 30px;
+  height: 100%;
+  color: #fff;
+  box-shadow: 0 18px 45px rgba(36, 31, 61, 0.25);
+}
+.card-caminho.ciber {
+  background: linear-gradient(135deg, #0d0b20, #3b2a8f);
+}
+.card-caminho.ia {
+  background: linear-gradient(135deg, #b4472b, var(--coral));
+}
+.card-caminho .icone {
+  font-size: 3rem;
+}
+.card-caminho h3 {
+  color: #fff;
+  font-size: 2rem;
+  margin: 10px 0 12px;
+}
+.card-caminho p {
+  color: rgba(255, 255, 255, 0.9);
+}
+.card-caminho .badge {
+  margin: 0 6px 6px 0;
+  font-weight: 500;
+}
+
+
+/* TABELA COMPARATIVA (Bootstrap .table) */
+.tabela-comparativa {
+  background: #fff;
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow: 0 12px 35px rgba(36, 31, 61, 0.1);
+}
+.tabela-comparativa th {
+  font-family: var(--fonte-titulo);
+  color: var(--noite);
+}
+.tabela-comparativa thead th {
+  background: var(--noite);
+  color: #fff;
+}
+.tabela-comparativa td,
+.tabela-comparativa th {
+  padding: 16px 18px;
+  vertical-align: top;
+}
+
+
+/* ACCORDION (plano de estudos) */
+.plano .accordion-item {
+  border: 1px solid #e6e0f7;
+  border-radius: 16px !important;
+  overflow: hidden;
+  margin-bottom: 12px;
+}
+.plano .accordion-button {
+  font-family: var(--fonte-titulo);
+  font-weight: 700;
+  color: var(--noite);
+  background: #fff;
+}
+.plano .accordion-button:not(.collapsed) {
+  background: var(--lavanda);
+  color: var(--noite);
+  box-shadow: none;
+}
+.plano .accordion-body {
+  color: var(--texto-suave);
+}
+
+.card-tech {
+  background: #fff;
+  border: 1px solid #e6e0f7;
+  border-radius: 18px;
+  padding: 24px 22px;
+  height: 100%;
+  transition: 0.3s;
+}
+.card-tech:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 34px rgba(124, 92, 255, 0.2);
+}
+.card-tech code {
+  font-family: var(--fonte-codigo);
+  color: var(--roxo);
+  background: var(--lavanda);
+  padding: 2px 8px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+}
+.card-tech h3 {
+  font-size: 1.3rem;
+  color: var(--noite);
+  margin: 12px 0 6px;
+}
+.card-tech p {
+  font-size: 0.93rem;
+  color: var(--texto-suave);
+  margin: 0;
+}
+
+.secao-voltar {
+  padding: 70px 0;
+  text-align: center;
+  background: var(--noite);
+}
