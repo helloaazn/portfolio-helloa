@@ -104,6 +104,46 @@
   padding: 16px 18px;
   vertical-align: top;
 }
+/* Tabela no celular: cada linha vira um bloco empilhado, sem rolagem lateral */
+@media (max-width: 767.98px) {
+  .tabela-comparativa table,
+  .tabela-comparativa tbody,
+  .tabela-comparativa tr,
+  .tabela-comparativa th,
+  .tabela-comparativa td {
+    display: block;
+    width: 100%;
+  }
+  .tabela-comparativa thead {
+    display: none;
+  }
+  .tabela-comparativa tr {
+    border-bottom: 1px solid #e6e0f7;
+    padding-bottom: 8px;
+  }
+  .tabela-comparativa tr:last-child {
+    border-bottom: 0;
+  }
+  .tabela-comparativa tbody th {
+    background: var(--noite);
+    color: #fff;
+    padding: 12px 18px;
+    font-size: 1rem;
+  }
+  .tabela-comparativa td {
+    padding: 12px 18px 4px;
+    font-size: 0.95rem;
+  }
+  .tabela-comparativa td::before {
+    content: attr(data-label);
+    display: block;
+    font-family: var(--fonte-titulo);
+    font-weight: 700;
+    font-size: 0.8rem;
+    color: #4a4570;
+    margin-bottom: 2px;
+  }
+}
 
 
 /* ACCORDION (plano de estudos) */
