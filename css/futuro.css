@@ -104,6 +104,7 @@
   padding: 16px 18px;
   vertical-align: top;
 }
+
 /* Tabela no celular: cada linha vira um bloco empilhado, sem rolagem lateral */
 @media (max-width: 767.98px) {
   .tabela-comparativa table,
